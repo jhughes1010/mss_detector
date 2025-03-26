@@ -47,12 +47,12 @@ void loop() {
     }
   }
 
-    //control outputs based on active flag
-    if (active) {
-      digitalWrite(MCU_OCCUPIED_OUT, HIGH);
-      digitalWrite(LED, HIGH);
-    } else {
-      digitalWrite(MCU_OCCUPIED_OUT, LOW);
-      digitalWrite(LED, LOW);
-    }
+  //control outputs based on active flag
+  if (active) {
+    digitalWrite(MCU_OCCUPIED_OUT, HIGH);
+    digitalWrite(LED, HIGH);
+  } else {
+    digitalWrite(MCU_OCCUPIED_OUT, LOW);
+    digitalWrite(LED, LOW);
+  }
 }
